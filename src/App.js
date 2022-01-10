@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import PiggyBank from './PiggyBank';
+import AccountDetails from './AccountDetails'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <PiggyBank title = "Savings Pig" depositAmount={15}interest = {20} />
+    <AccountDetails interest = {20}/>
+    </>
+    
   );
 }
 
 export default App;
+
